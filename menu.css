@@ -1,0 +1,361 @@
+@keyframes progress-menu {
+  0% {
+    transform: translateY 200px;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes retarde {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+}
+html {
+  font-family: "Roboto", "sans-serif";
+}
+html h2 {
+  font-family: "Shrikhand", "sans-serif";
+}
+
+body {
+  margin: 0 0 0 0;
+}
+body header {
+  font-family: "shrikhand", "sans-serif";
+  text-align: center;
+  font-size: 112%;
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgb(213, 211, 211);
+  padding: 0.3rem;
+}
+body header .logo {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 21%;
+}
+body header .logo a {
+  text-decoration: none;
+  color: black;
+}
+body header .logo a i {
+  margin-top: 42px;
+  margin-bottom: 29px;
+  display: grid;
+  place-items: center;
+  margin-right: 19%;
+}
+body main .img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+body main .contenu {
+  border-radius: 40px 40px 0 0;
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+}
+body main .contenu .coeur {
+  margin-left: 5%;
+}
+body main .contenu .coeur .Note {
+  display: flex;
+  justify-content: space-between;
+}
+body main .contenu .coeur .Note .cardh {
+  cursor: pointer;
+  width: 17px;
+  height: 21px;
+  margin-top: 7%;
+  margin-right: 13%;
+}
+body main .contenu .coeur .Note .cardh i {
+  position: absolute;
+  font-size: 25px;
+}
+body main .contenu .coeur .Note .cardh .active {
+  -webkit-background-clip: text;
+  background-color: #9356DC;
+  color: transparent;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+}
+body main .contenu .coeur .Note .cardh:hover .iconh {
+  opacity: 0;
+}
+body main .contenu .coeur .Note .cardh:hover .active {
+  opacity: 1;
+}
+body main .contenu .coeur .titr {
+  font-size: 200%;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "shrikhand", "sans-serif";
+  margin-left: 2%;
+}
+body main .contenu .soust {
+  font-size: 110%;
+  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  margin-left: 2%;
+}
+body main .contenu .entre {
+  margin-left: 1%;
+}
+body main .contenu .cardsresto {
+  margin-left: 4%;
+  margin-right: 5%;
+}
+body main .contenu .cardsresto .card, body main .contenu .cardsresto .cardn {
+  margin-bottom: 5%;
+  animation: retarde 3s ease-in-out;
+}
+body main .contenu .cardsresto .card a, body main .contenu .cardsresto .cardn a {
+  color: black;
+  text-decoration: none;
+}
+body main .contenu .cardsresto .card a .textm, body main .contenu .cardsresto .cardn a .textm {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 0px 13px 2px rgba(128, 128, 128, 0.4117647059);
+  border-radius: 21px;
+  height: 100%;
+  overflow: hidden;
+}
+body main .contenu .cardsresto .card a .textm .titre, body main .contenu .cardsresto .cardn a .textm .titre {
+  font-size: 15px;
+  width: 80%;
+  margin-left: 2%;
+}
+body main .contenu .cardsresto .card a .textm .titre h2, body main .contenu .cardsresto .cardn a .textm .titre h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body main .contenu .cardsresto .card a .textm .titre p, body main .contenu .cardsresto .cardn a .textm .titre p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body main .contenu .cardsresto .card a .textm .prix, body main .contenu .cardsresto .cardn a .textm .prix {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+body main .contenu .cardsresto .card a .textm .prix .price, body main .contenu .cardsresto .cardn a .textm .prix .price {
+  margin-top: 34px;
+  margin-left: 5%;
+}
+body main .contenu .cardsresto .card a .textm .prix .check, body main .contenu .cardsresto .cardn a .textm .prix .check {
+  background-color: #99E2D0;
+  border-radius: 0 14px 14px 0;
+  height: 100px;
+  width: 48px;
+  margin-right: -53px;
+  display: grid;
+  place-items: center;
+  transition: all 1s ease-in-out;
+}
+body main .contenu .cardsresto .card a .textm .prix .check .checkm, body main .contenu .cardsresto .cardn a .textm .prix .check .checkm {
+  color: #99E2D0;
+  margin-right: 1%;
+  margin-top: 5%;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+}
+body main .contenu .cardsresto .card a .textm:hover .check, body main .contenu .cardsresto .cardn a .textm:hover .check {
+  margin-right: 0;
+}
+body main .contenu .cardsresto .card a .textm:hover .checkm, body main .contenu .cardsresto .cardn a .textm:hover .checkm {
+  animation: rotate 3s;
+}
+body main .contenu .cardsresto .card a .textm:hover h2, body main .contenu .cardsresto .cardn a .textm:hover h2 {
+  width: 200px;
+}
+body main .contenu .cardsresto .bouton {
+  display: flex;
+  justify-content: center;
+}
+body main .contenu .cardsresto .bouton .commande {
+  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc);
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 5%;
+  padding: 1%;
+  width: 50%;
+}
+body footer {
+  background-color: rgb(81, 80, 80);
+  color: white;
+  width: 100%;
+  padding-top: 5%;
+  top: 194%;
+}
+body footer h1 {
+  font-family: "shrikhand", cursive;
+  font-size: 30px;
+  margin: 0 0 0 5%;
+}
+body footer .finpage {
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 2%;
+}
+body footer .finpage .iconf {
+  display: flex;
+}
+body footer .finpage .iconf .fas {
+  margin-left: 6%;
+  margin-top: 1%;
+  margin-right: 3%;
+}
+body footer .finpage .iconf p {
+  margin: 0;
+}
+body footer .finpage .legal {
+  margin-left: 5%;
+  padding-bottom: 8%;
+}
+body footer .finpage .legal a {
+  text-decoration: none;
+}
+body footer .finpage .legal a .textp, body footer .finpage .legal a p {
+  margin-bottom: 0;
+  margin-top: 8px;
+  color: white;
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  body body main .img {
+    height: 396px;
+  }
+  body body main .contenu .coeur .Note .cardh {
+    cursor: pointer;
+    width: 17px;
+    height: 21px;
+    margin-top: 5%;
+    margin-right: 13%;
+  }
+  body body main .contenu .coeur .Note .cardh i {
+    position: absolute;
+    font-size: 25px;
+  }
+  body body main .contenu .coeur .Note .cardh .active {
+    background-color: #9356DC;
+    color: transparent;
+    opacity: 0;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+  }
+  body body main .contenu .coeur .Note .cardh:active .iconh {
+    opacity: 0;
+  }
+  body body main .contenu .coeur .Note .cardh:active .active {
+    opacity: 1;
+  }
+  body body main .contenu .cardsresto .card a .prix .price, body body main .contenu .cardsresto .cardn a .prix .price {
+    margin-top: 33px;
+    margin-left: 375px;
+    font-size: 27px;
+  }
+  body body main .contenu .bouton {
+    border-radius: 35px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body main .img {
+    height: 251px;
+  }
+  body main .contenu .coeur .Note {
+    font-size: 30px;
+  }
+  body main .contenu .coeur .Note.titr {
+    font-size: 40px;
+    margin-left: 1%;
+  }
+  body main .contenu .cardsresto .categorie1, body main .contenu .cardsresto .categorie2, body main .contenu .cardsresto .categorie3 {
+    display: flex;
+  }
+  body main .contenu .cardsresto .categorie1 .card, body main .contenu .cardsresto .categorie2 .card, body main .contenu .cardsresto .categorie3 .card {
+    margin-bottom: 5%;
+    width: 109%;
+    margin-left: 2%;
+  }
+  body main .contenu .cardsresto .categorie1 .card a .textm.titre h2, body main .contenu .cardsresto .categorie2 .card a .textm.titre h2, body main .contenu .cardsresto .categorie3 .card a .textm.titre h2 {
+    font-size: 15px;
+  }
+  body main .contenu .cardsresto .cardn {
+    margin-bottom: 5%;
+    width: 32%;
+    margin-left: 2%;
+  }
+  body main footer {
+    background-color: rgb(81, 80, 80);
+    color: white;
+    width: 100%;
+    padding-top: 5%;
+  }
+  body main footer h1 {
+    font-family: "shrikhand", cursive;
+    font-size: 30px;
+    margin: 0 0 0 5%;
+  }
+  body main footer .finpage {
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 4%;
+    display: flex;
+  }
+  body main footer .finpage .iconf {
+    display: flex;
+  }
+  body main footer .finpage .iconf .fas {
+    margin-left: 6%;
+    margin-top: 1%;
+    margin-right: 3%;
+  }
+  body main footer .finpage .iconf p {
+    margin: 0;
+    width: 208px;
+  }
+  body main footer .finpage .legal {
+    margin-left: 5%;
+    padding-bottom: 8%;
+    display: flex;
+  }
+  body main footer .finpage .legal .textp, body main footer .finpage .legal p {
+    margin-bottom: 0;
+    margin-top: 2px;
+    margin-left: -5%;
+    width: 204px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

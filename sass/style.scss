@@ -1,0 +1,1504 @@
+html
+{   
+     font-family: 'Roboto', sans-serif;
+
+     h2
+    {
+             
+        font-family: "Shrikhand","sans-serif";
+    }
+
+    
+}
+
+@media screen and (max-width:300px)
+ {
+   
+ 
+
+    body
+{
+     margin: 0 0 0 0;
+
+
+    & .loading
+    {
+       
+        position: fixed;
+        animation: timeout 3s ease-in-out;
+        animation-fill-mode: forwards;
+        z-index: 1;
+       
+        width: 100%;
+        height: 100%;
+        background-color: white;
+            opacity: 0.9;
+            display: grid;
+            place-items: center;
+            -webkit-animation-fill-mode: forwards;
+        
+
+
+
+
+
+
+        &::before
+        {   
+            content: "";
+            width: 264px;
+            height: 275px;
+            border: 10px solid transparent;
+            border-top-color: #99E2D0;
+            border-radius: 240px;
+            border-right-color: #FF79DA;
+            border-bottom-color: #be98ec;
+            animation: loa 3s linear infinite;
+
+        }
+    }
+
+        
+
+        @keyframes loa {
+
+            to {
+                transform: rotate(1turn);
+            }
+            
+        }
+
+        
+        @keyframes timeout {
+
+
+            0% {
+    
+                opacity: 1;
+            }
+    
+
+            100% {
+    
+                visibility: hidden;
+                opacity: 0;
+                z-index: -1;
+ 
+            
+            }
+            
+
+            }
+
+      
+    
+
+
+
+    
+
+    header
+    {
+        font-family:"shrikhand","sans-serif";
+        text-align: center;
+        font-size: 15px;
+        font-weight: bolder;
+        font-style: italic;
+        position: relative;
+        box-shadow: 0 0 0.5rem rgb(213, 211, 211);
+        padding: 0.3rem;
+
+
+    }
+    
+
+    
+main
+{
+
+
+
+    .city
+    {
+
+        text-align: center;
+        padding-top: 20px;
+        background-color: rgb(232, 232, 232);
+        display: flex;
+
+        & i
+        {
+            font-size: 130%;
+            
+            padding-bottom: 2%;  
+            margin-left: 20%;
+        }
+
+
+        & input
+        {
+            border: none;
+
+            background-color: rgb(232, 232, 232);
+            font-size: 10px;
+          
+        }
+    }
+
+    .reserv 
+    {
+        text-align: center;
+        background-color: rgb(244, 244, 244);
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 12px;
+
+        & h2
+        {
+            margin: 0;
+        }
+
+        & .explore 
+        {
+            font-size: 130%;
+            border-radius: 49px;
+            height: 45px;
+            background: -webkit-linear-gradient(180deg, #ff79da, #9356dc);
+            width: 85%;
+            border: none;
+            margin-left: 10%;
+            display: grid;
+            place-items: center;
+            
+
+            & a 
+            {
+                text-decoration: none;
+                color: white;
+            }
+            
+
+        }
+    }
+
+    .fonct
+    {
+        margin-left: 4%;
+    }
+
+    .btnfonct
+    {   
+
+        display: grid;
+        place-items: center;
+        padding-left: 0;
+
+
+        & .one, .two, .three
+        {
+            display: flex;
+            background-color: #f1f1f1;
+            padding: 1%;
+            margin-bottom: 7%;
+            border: solid 2px #F2F2F2;
+            border-radius: 49px;
+            font-weight: bold;
+            width: 70%;
+            height: 45%;
+            justify-content: space-around;
+            font-size: 12px;
+           
+            & i 
+            {
+                margin-left: 5%;
+                color: grey;
+
+                &:hover
+                {
+                    color: #8e31ff;
+                }
+            }
+
+            & .number
+            {
+                background-color: #9356DC;
+                border: 0.2rem solid #9356DC;
+                border-radius: 47%;
+                width: 4%;
+                display: grid;
+                place-items: center;
+                color: white;
+                position: absolute;
+                padding: 0.1%;
+                margin: 0.3% 0 0 -65%;
+                
+            }
+
+            &:hover 
+            {
+                background-color: #d1b7f0;
+            }
+        }
+        
+
+    }
+
+
+
+    #restaurants
+    {   
+        background-color: rgb(217, 216, 216);
+
+        .resto
+        {
+            margin-left: 4%;
+            padding-top: 3%;
+        }
+        
+        
+
+        & .row1
+
+        { 
+            margin-left: 4%;
+            height: 50%;
+            margin-right: 4%;
+            padding-top: 4%;
+            
+
+            .card
+            {
+                
+                width: 98%;
+                height: 287px;
+                background-color: white;
+                border-radius: 46PX;
+                margin-right: 10%;
+                box-shadow: 0px 0px 13px 2px #80808069;
+                margin-bottom: 7%;
+                padding-bottom: 1px;
+
+                & a 
+                {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 23px;
+                
+
+                    & .badge 
+                    {
+                        position: absolute;
+                        background-color: #99E2D0;
+                        color: rgb(59, 145, 59);
+                        font-weight: bold;
+                        width: 40%;
+                        padding: 3px 12px;
+                        text-align: center;
+                        border-radius: 2px;
+                        margin-top: 3%;
+                        margin-left: 25%;
+                        font-size: 15px;
+
+                
+                    }
+            
+
+                    & .img
+                    {
+                        width: 100%;
+                        height: 73%;
+                        border-radius: 18px 18px 0 0;
+                        object-fit: cover;
+                    }
+
+                    & .textimg
+                    {
+                        display: flex;
+                        margin-right: 5%;
+
+                            & .content
+                            {
+                                
+                                    margin-left: 5%;
+                                    width: 86.5%;
+                                    font-size: 13px;
+
+                            
+                                    & h2 
+                                    {
+                                        margin: 0;
+                                        padding: 0;
+                                        font-size: 15px;
+                                
+                                        
+                                    }
+
+                                    & p 
+                                    {   
+                                        font-size: 12px;
+                                        margin-top: 5px;
+                                       
+
+                                    }
+
+                            }
+
+                            & .cardh
+                            {
+                                cursor: pointer;
+                                width: 17px;
+                                height: 21px;
+                                margin-right: 8%;
+                        
+                                & i
+                                {
+                                    position: absolute;
+                                }
+
+                            
+                                & .active
+                                {   
+                                    background-color: #9356DC;
+                                    color: transparent;
+                                    opacity: 0;
+                                    background-image: linear-gradient(#FF79DA, #9356DC);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                   
+                                }
+
+                                &:hover .iconh
+                                {
+                                    opacity: 0;
+                                }
+
+
+                                &:hover .active
+                                {
+                                    opacity: 1;
+                                }
+
+                            }
+
+                     }
+
+                    
+
+                }
+
+   
+            }
+
+        }
+
+
+
+        & .row2
+        {
+                margin-left: 4%;
+                height: 50%;
+                margin-right: 4%;
+                padding-bottom: 8%;
+    
+                .card
+                {
+                    
+                    width: 98%;
+                    height: 287px;
+                    background-color: white;
+                    border-radius: 46px;
+                    margin-right: 9%;
+                    box-shadow: 0px 0px 13px 2px #80808069;
+                    margin-bottom: 7%;
+                    padding-bottom: 1px;
+                 
+    
+                    & a 
+                    {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 13px;
+                        
+                    
+    
+                        & .badge 
+                        {
+                            // background-color: #99E2D0;
+                            // color: black;
+                            // padding: 4px 8px;
+                            // text-align: center;
+                            // border-radius: 5px;
+                          
+                    
+                        }
+                
+    
+                        & .img
+                        {
+                            width: 100%;
+                            height: 73%;
+                            border-radius: 18px 18px 0 0;
+                            object-fit: cover;
+                        }
+    
+                        
+                        & .textimg
+                        {
+                            display: flex;
+    
+                                & .content
+                                {
+                                    
+                                        margin-left: 5%;
+                                        width: 86.5%;
+                                        
+    
+                                        
+                                        & h2 
+                                        {
+                                            margin: 0;
+                                            padding: 0;
+                                            font-size: 10px;
+                                    
+                                            
+                                        }
+
+                                        & p 
+                                        {   
+                                            font-size: 12px;
+                                            margin-top: 5px;
+                                       
+
+                                        }
+    
+                                }
+    
+                                & .cardh
+                            {
+                                cursor: pointer;
+                                width: 29px;
+                                height: 21px;
+                                margin-right: 8%;
+                        
+                                & i
+                                {
+                                    position: absolute;
+                                    font-size: 25px;
+                                }
+
+                            
+                                & .active
+                                {   
+                                    background-color: #9356DC;
+                                    color: transparent;
+                                    opacity: 0;
+                                    background-image: linear-gradient(#FF79DA, #9356DC);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                   
+                                }
+
+                                &:hover .iconh
+                                {
+                                    opacity: 0;
+                                }
+
+
+                                &:hover .active
+                                {
+                                    opacity: 1;
+                                }
+
+                            }
+    
+                         }
+    
+                        
+    
+                    }
+    
+       
+                }
+    
+        }
+
+        
+
+    }
+}
+}
+
+
+footer
+{
+    background-color: rgb(81, 80, 80);
+    color: white;
+    width: 100%;
+    padding-top: 5%;
+
+        h1 
+        {
+            font-family:"shrikhand","sans-cursive";
+            font-size: 30px;
+            margin: 0 0 0 5%;
+        }
+
+        .finpage
+        {
+            
+            justify-content: space-between;
+            width: 70%;
+            margin-left: 2%;
+            
+            & .iconf
+            {
+                display: flex;
+                font-size: 13px;
+
+                & .fas
+                {
+                    margin-top: 15%;
+                }
+
+            }
+
+            & .legal
+            {
+                margin-left: 5%;
+
+                & a
+                {
+                    text-decoration: none;
+                
+
+                    & .textp, p
+                    {
+                        margin-bottom: 0;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+
+}
+    
+}
+
+@media screen and (min-width:300px) 
+{
+    
+
+
+body
+{
+     margin: 0 0 0 0;
+
+
+    & .loading
+    {
+       
+        position: fixed;
+        animation: timeout 3s ease-in-out;
+        animation-fill-mode: forwards;
+        z-index: 1;
+       
+        width: 100%;
+        height: 100%;
+        background-color: white;
+            opacity: 0.9;
+            display: grid;
+            place-items: center;
+            -webkit-animation-fill-mode: forwards;
+        
+
+
+
+
+
+
+        &::before
+        {   
+            content: "";
+            width: 264px;
+            height: 275px;
+            border: 10px solid transparent;
+            border-top-color: #99E2D0;
+            border-radius: 240px;
+            border-right-color: #FF79DA;
+            border-bottom-color: #be98ec;
+            animation: loa 3s linear infinite;
+
+        }
+    }
+
+        
+
+        @keyframes loa {
+
+            to {
+                transform: rotate(1turn);
+            }
+            
+        }
+
+        
+        @keyframes timeout {
+
+
+            0% {
+    
+                opacity: 1;
+            }
+    
+
+            100% {
+    
+                visibility: hidden;
+                opacity: 0;
+                z-index: -1;
+ 
+            
+            }
+            
+
+            }
+
+      
+    
+
+
+
+    
+
+    header
+    {
+        font-family: "shrikhand", "sans-serif";
+        text-align: center;
+        font-size: 200%;
+        font-weight: bolder;
+        font-style: italic;
+        position: relative;
+        box-shadow: 0 0 0.5rem rgb(213, 211, 211);
+        padding: 0.3rem;
+
+        & h1 
+        {
+            font-size: 55px;
+        }
+
+    }
+
+    
+main
+{
+
+
+    .city
+    {
+
+        text-align: center;
+        padding-top: 20px;
+        background-color: rgb(232, 232, 232);
+
+        & i
+        {
+            font-size: 130%;
+            padding-left: 27px;
+            padding-bottom: 2%;  
+        }
+
+
+        & input
+        {
+            border: none;
+            font-size: medium;
+            background-color: rgb(232, 232, 232);
+            padding-left: 7%;
+          
+        }
+    }
+
+    .reserv 
+    {
+        text-align: center;
+        background-color: rgb(244, 244, 244);
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+        & h2
+        {
+            margin: 0;
+        }
+
+        & .explore 
+        {
+            font-size: 130%;
+            border-radius: 49px;
+            height: 45px;
+            background: -webkit-linear-gradient(180deg, #ff79da, #9356dc);
+            width: 85%;
+            border: none;
+            margin-left: 10%;
+            display: grid;
+            place-items: center;
+            
+
+            & a 
+            {
+                text-decoration: none;
+                color: white;
+            }
+            
+
+        }
+    }
+
+    .fonct
+    {
+        margin-left: 4%;
+    }
+
+    .btnfonct
+    {   
+
+        display: grid;
+        place-items: center;
+
+
+        & .one, .two, .three
+        {
+            display: flex;
+    background-color: #f1f1f1;
+    margin-bottom: 5%;
+    border: solid 2px #F2F2F2;
+    border-radius: 49px;
+    font-weight: bold;
+    width: 235px;
+    height: 55%;
+    justify-content: space-evenly;
+    font-size: 17px;
+    padding-top: 5px;
+
+           
+            & i 
+            {
+                margin-left: 5%;
+                color: grey;
+
+                &:hover
+                {
+                    color: #8e31ff;
+                }
+            }
+
+            & .number
+            {
+                background-color: #9356DC;
+                border: 0.2rem solid #9356DC;
+                border-radius: 47%;
+                width: 4%;
+                display: grid;
+                place-items: center;
+                color: white;
+                position: absolute;
+                padding: 0.1%;
+                margin: -3px -57px 0 -294px;
+                
+            }
+
+            &:hover 
+            {
+                background-color: #d1b7f0;
+            }
+        }
+        
+
+    }
+
+
+
+    #restaurants
+    {   
+        background-color: rgb(217, 216, 216);
+
+        .resto
+        {
+            margin-left: 4%;
+            padding-top: 3%;
+        }
+        
+        
+
+        & .row1
+
+        { 
+            margin-left: 4%;
+            height: 50%;
+            margin-right: 4%;
+            padding-top: 4%;
+            
+
+            .card
+            {
+                
+                width: 98%;
+                height: 287px;
+                background-color: white;
+                border-radius: 46PX;
+                margin-right: 10%;
+                box-shadow: 0px 0px 13px 2px #80808069;
+                margin-bottom: 7%;
+                padding-bottom: 1px;
+
+                & a 
+                {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 23px;
+                
+
+                    & .badge 
+                    {
+                        position: absolute;
+                        background-color: #99E2D0;
+                        color: rgb(59, 145, 59);
+                        font-weight: bold;
+                        width: 22%;
+                        padding: 3px 12px;
+                        text-align: center;
+                        border-radius: 2px;
+                        margin-top: 3%;
+                        margin-left: 55%;
+                        font-size: 19px;
+
+                
+                    }
+            
+
+                    & .img
+                    {
+                        width: 100%;
+                        height: 73%;
+                        border-radius: 18px 18px 0 0;
+                        object-fit: cover;
+                    }
+
+                    & .textimg
+                    {
+                        display: flex;
+
+                            & .content
+                            {
+                                
+                                    margin-left: 5%;
+                                    width: 86.5%;
+                                    font-size: 13px;
+
+                            
+                                    & h2 
+                                    {
+                                        margin: 0;
+                                        padding: 0;
+                                
+                                        
+                                    }
+
+                                    & p 
+                                    {   
+                                        font-size: 19px;
+                                        margin-top: 5px;
+                                       
+
+                                    }
+
+                            }
+
+                            & .cardh
+                            {
+                                cursor: pointer;
+                                width: 17px;
+                                height: 21px;
+                        
+                                & i
+                                {
+                                    position: absolute;
+                                }
+
+                            
+                                & .active
+                                {   
+                                    background-color: #9356DC;
+                                    color: transparent;
+                                    opacity: 0;
+                                    background-image: linear-gradient(#FF79DA, #9356DC);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                   
+                                }
+
+                                &:hover .iconh
+                                {
+                                    opacity: 0;
+                                }
+
+
+                                &:hover .active
+                                {
+                                    opacity: 1;
+                                }
+
+                            }
+
+                     }
+
+                    
+
+                }
+
+   
+            }
+
+        }
+
+
+
+        & .row2
+        {
+                margin-left: 4%;
+                height: 50%;
+                margin-right: 4%;
+                padding-bottom: 8%;
+    
+                .card
+                {
+                    
+                    width: 98%;
+                    height: 287px;
+                    background-color: white;
+                    border-radius: 46px;
+                    margin-right: 9%;
+                    box-shadow: 0px 0px 13px 2px #80808069;
+                    margin-bottom: 7%;
+                    padding-bottom: 1px;
+                 
+    
+                    & a 
+                    {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 13px;
+                        
+                    
+    
+                        & .badge 
+                        {
+                            // background-color: #99E2D0;
+                            // color: black;
+                            // padding: 4px 8px;
+                            // text-align: center;
+                            // border-radius: 5px;
+                            
+                            position: absolute;
+                            background-color: #99E2D0;
+                            color: rgb(59, 145, 59);
+                            font-weight: bold;
+                            width: 18%;
+                            padding: 4px 8px;
+                            text-align: center;
+                            border-radius: 2px;
+                            margin-top: 3%;
+                            right: 10%;
+                    
+                        }
+                
+    
+                        & .img
+                        {
+                            width: 100%;
+                            height: 73%;
+                            border-radius: 18px 18px 0 0;
+                            object-fit: cover;
+                        }
+    
+                        
+                        & .textimg
+                        {
+                            display: flex;
+    
+                                & .content
+                                {
+                                    
+                                        margin-left: 5%;
+                                        width: 86.5%;
+                                        
+    
+                                        
+                                        & h2 
+                                        {
+                                            margin: 0;
+                                            padding: 0;
+                                    
+                                            
+                                        }
+
+                                        & p 
+                                        {   
+                                            font-size: 19px;
+                                            margin-top: 5px;
+                                       
+
+                                        }
+    
+                                }
+    
+                                & .cardh
+                            {
+                                cursor: pointer;
+                                width: 17px;
+                                height: 21px;
+                        
+                                & i
+                                {
+                                    position: absolute;
+                                    font-size: 25px;
+                                }
+
+                            
+                                & .active
+                                {   
+                                    background-color: #9356DC;
+                                    color: transparent;
+                                    opacity: 0;
+                                    background-image: linear-gradient(#FF79DA, #9356DC);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                   
+                                }
+
+                                &:hover .iconh
+                                {
+                                    opacity: 0;
+                                }
+
+
+                                &:hover .active
+                                {
+                                    opacity: 1;
+                                }
+
+                            }
+    
+                         }
+    
+                        
+    
+                    }
+    
+       
+                }
+    
+        }
+
+        
+
+    }
+}
+}
+
+
+footer
+{
+    background-color: rgb(81, 80, 80);
+    color: white;
+    width: 100%;
+    padding-top: 5%;
+
+        h1 
+        {
+            font-family:"shrikhand",cursive;
+            font-size: 30px;
+            margin: 0 0 0 5%;
+        }
+
+        .finpage
+        {
+            
+            justify-content: space-between;
+            width: 70%;
+            margin-left: 2%;
+            
+            & .iconf
+            {
+                display: flex;
+
+                & .fas
+                {
+                    margin: 5%;
+                }
+
+            }
+
+            & .legal
+            {
+                
+                margin-left: 5%;
+justify-content: space-between;
+
+                & a
+                {
+                    text-decoration: none;
+                
+
+                    & .textp, p
+                    {
+                        margin-bottom: 0;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+
+}
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px)
+{
+
+body 
+{
+
+
+main
+{
+    .fonctionnement
+    {
+        & .btnfonct
+        {
+    
+
+            & .one, .two, .three
+
+            {     display: flex;
+                background-color: #f1f1f1;
+                padding: 1%;
+                margin-bottom: 7%;
+                border: solid 2px #F2F2F2;
+                border-radius: 49px;
+                font-weight: bold;
+                width: 39%;
+                height: 25%;
+                justify-content: space-around;
+                
+                & .number
+                {
+
+                    margin: -3.5% 0 0 1%;
+                    padding: 0.5%;
+                    width: 3%;
+                    border-radius: 7rem;
+                    margin: -4% 0 13% 2%;
+                }
+            }
+
+
+         }
+    
+
+
+    }
+
+
+    #restaurants
+    {
+        
+
+        & .row1
+
+        { 
+           
+            display: flex;
+
+
+
+            & .card
+            {
+                
+
+                & a
+                {
+
+                    & .badge
+                    {
+                        margin-left: 22%;
+                        width: 10%
+                    }
+                        
+                }
+            }
+        }
+           
+
+        & .row2
+        {
+
+               
+                display: flex;
+
+                & .card
+                {
+    
+                    & a
+                    {
+                        & .badge
+                        {
+                            
+                            width: 10%;
+                          
+                          
+                        }
+                    }
+                }
+   
+    
+        }
+
+        
+
+    }
+
+
+
+}
+}
+}
+
+
+    
+@media screen and (min-width:992px) 
+
+{
+
+body
+{
+
+
+
+main 
+{
+
+    .city
+    {
+
+
+       
+
+        & input
+        {
+            padding-left: 2%;
+            font-size: 20px;
+            padding-top: 1%;
+        }
+
+
+
+    }
+
+    .reserv 
+    {
+        & .explore
+        {
+            width: 27%;
+            margin-left: 35%;
+        }
+    }
+
+    .fonctionnement 
+    {
+        & h1 
+        {
+            margin-left: 2%;
+        }
+
+        & .btnfonct
+        {   
+            display: flex;
+            margin-right: 5%;
+            justify-content: space-between;
+            margin-top: 90px;
+            height: 60px;
+
+            & .one, .two, .three
+            {   
+
+                margin-left: 2%;
+                width: 323px;
+                
+               
+
+                & .number
+                {
+                    margin: -2.5% 0 0 1%;
+                    width: 3%;
+                    border-radius: 25px;
+                    margin: -30px 0 0 1.5px
+                }
+             
+            }
+
+
+
+        }
+    }
+
+    #restaurants 
+    {
+
+
+        & h2
+        {
+            font-size: 35px;
+        }
+
+        & .row1
+
+        { 
+           
+            display: flex;
+            justify-content: space-between;
+            margin-right: 0;
+            margin-left: 7%;
+
+
+
+            & .card
+            {
+                height: 360px;
+
+                & a
+                {
+
+                    & .badge
+                    {
+                    
+                        margin-left: 23%;
+                        width: 9%;
+                        margin-top: 2%;
+                    }
+                    
+                }
+
+                & .textimg
+                {
+                   
+                    & .content
+                    {
+                        font-size: 19px;
+                        margin-top: 2%;
+
+                        & h2 
+                        {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .row2
+        {
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 0;
+            margin-left: 7%;
+
+            
+            & .card
+            {
+                height: 360px;
+
+                & a 
+                {
+
+                    &.badge
+                    {
+                    
+
+                    }
+                }
+            }
+
+            & .textimg
+            {
+               
+                & .content
+                {
+                    font-size: 19px;
+                    margin-top: 2%;
+                }
+            }
+
+
+
+
+        }
+
+
+    }
+
+}
+
+
+footer
+{
+    padding-bottom: 54px;
+
+    .finpage
+    {
+        display: flex;
+
+        & .iconf 
+        {
+            width: 240px;
+        }
+
+        & .legal
+        {
+            display: flex;
+            margin-left: 0;
+
+        
+
+            & .textp
+           {
+            margin-left: 328%;
+            color: white;
+            text-decoration: none;
+            
+           }
+        }
+    }
+
+}
+
+
+
+}
+}
+ 
+
+
+
+
+
+
+
+
+
+
+

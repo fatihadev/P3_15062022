@@ -1,0 +1,350 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0 0 0 0;
+}
+body header {
+  font-family: "shrikhand", cursive;
+  text-align: center;
+  font-size: 200%;
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgb(213, 211, 211);
+  padding: 0.3rem;
+}
+body main .city {
+  text-align: center;
+  padding-top: 20px;
+  background-color: rgb(232, 232, 232);
+}
+body main .city i {
+  font-size: 130%;
+  padding-left: 27px;
+  padding-bottom: 2%;
+}
+body main .city input {
+  border: none;
+  font-size: medium;
+  background-color: rgb(232, 232, 232);
+  padding-left: 7%;
+}
+body main .reserv {
+  text-align: center;
+  background-color: rgb(244, 244, 244);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+body main .reserv h2 {
+  margin: 0;
+}
+body main .reserv .explore {
+  font-size: 130%;
+  border-radius: 49px;
+  height: 45px;
+  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc);
+  width: 85%;
+  border: none;
+}
+body main .reserv .explore a {
+  text-decoration: none;
+  color: white;
+}
+body main .fonct {
+  margin-left: 4%;
+}
+body main .btnfonct {
+  display: grid;
+  place-items: center;
+}
+body main .btnfonct .one, body main .btnfonct .two, body main .btnfonct .three {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 1%;
+  margin-bottom: 7%;
+  border: solid 2px #F2F2F2;
+  border-radius: 49px;
+  font-weight: bold;
+  width: 70%;
+  height: 45%;
+  justify-content: space-around;
+}
+body main .btnfonct .one i, body main .btnfonct .two i, body main .btnfonct .three i {
+  margin-left: 5%;
+}
+body main .btnfonct .one .number, body main .btnfonct .two .number, body main .btnfonct .three .number {
+  background-color: #9356DC;
+  border: 0.2rem solid #9356DC;
+  border-radius: 3rem;
+  width: 7%;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: absolute;
+  padding: 0.1%;
+  margin: -1% 0 0 -60%;
+}
+body main .btnfonct .one:hover, body main .btnfonct .two:hover, body main .btnfonct .three:hover {
+  background-color: #be98ec;
+}
+body main #restaurants {
+  background-color: rgb(217, 216, 216);
+}
+body main #restaurants .resto {
+  margin-left: 4%;
+  padding-top: 3%;
+}
+body main #restaurants .row1 {
+  margin-left: 4%;
+  height: 50%;
+  margin-right: 4%;
+  padding-top: 4%;
+}
+body main #restaurants .row1 .card {
+  width: 98%;
+  height: 275px;
+  background-color: white;
+  border-radius: 9%;
+  margin-right: 10%;
+  box-shadow: 0px 0px 13px 2px rgba(128, 128, 128, 0.4117647059);
+  margin-bottom: 7%;
+}
+body main #restaurants .row1 .card a {
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+}
+body main #restaurants .row1 .card a .badge {
+  background-color: #99E2D0;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 3%;
+  right: 10%;
+}
+body main #restaurants .row1 .card a .img {
+  width: 100%;
+  height: 73%;
+  border-radius: 18px 18px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #restaurants .row1 .card a .textimg {
+  display: flex;
+}
+body main #restaurants .row1 .card a .textimg .content {
+  margin-left: 5%;
+  width: 86.5%;
+  font-size: 13px;
+}
+body main #restaurants .row1 .card a .textimg .content h2 {
+  margin: 0;
+  padding: 0;
+}
+body main #restaurants .row1 .card a .textimg .content p {
+  font-size: 19px;
+  margin-top: 5px;
+}
+body main #restaurants .row1 .card a .textimg .cardh {
+  cursor: pointer;
+  width: 17px;
+  height: 21px;
+}
+body main #restaurants .row1 .card a .textimg .cardh i {
+  position: absolute;
+}
+body main #restaurants .row1 .card a .textimg .cardh .active {
+  background-color: #9356DC;
+  color: transparent;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+body main #restaurants .row1 .card a .textimg .cardh:active .iconh {
+  opacity: 0;
+}
+body main #restaurants .row1 .card a .textimg .cardh:active .active {
+  opacity: 1;
+}
+body main #restaurants .row2 {
+  margin-left: 4%;
+  height: 50%;
+  margin-right: 4%;
+  padding-bottom: 8%;
+}
+body main #restaurants .row2 .card {
+  width: 98%;
+  height: 275px;
+  background-color: white;
+  border-radius: 6%;
+  margin-right: 9%;
+  box-shadow: 0px 0px 13px 2px rgba(128, 128, 128, 0.4117647059);
+  margin-bottom: 7%;
+}
+body main #restaurants .row2 .card a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+body main #restaurants .row2 .card a .badge {
+  background-color: #99E2D0;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+body main #restaurants .row2 .card a .img {
+  width: 100%;
+  height: 73%;
+  border-radius: 18px 18px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #restaurants .row2 .card a .textimg {
+  display: flex;
+}
+body main #restaurants .row2 .card a .textimg .content {
+  margin-left: 5%;
+  width: 86.5%;
+}
+body main #restaurants .row2 .card a .textimg .content h2 {
+  margin: 0;
+  padding: 0;
+}
+body main #restaurants .row2 .card a .textimg .content p {
+  font-size: 19px;
+  margin-top: 5px;
+}
+body main #restaurants .row2 .card a .textimg .cardh {
+  cursor: pointer;
+  width: 17px;
+  height: 21px;
+}
+body main #restaurants .row2 .card a .textimg .cardh i {
+  position: absolute;
+  font-size: 25px;
+}
+body main #restaurants .row2 .card a .textimg .cardh .active {
+  background-color: #9356DC;
+  color: transparent;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+body main #restaurants .row2 .card a .textimg .cardh:active .iconh {
+  opacity: 0;
+}
+body main #restaurants .row2 .card a .textimg .cardh:active .active {
+  opacity: 1;
+}
+
+footer {
+  background-color: rgb(81, 80, 80);
+  color: white;
+  width: 100%;
+  padding-top: 5%;
+}
+footer h1 {
+  font-family: "shrikhand", cursive;
+  font-size: 30px;
+  margin: 0 0 0 5%;
+}
+footer .finpage {
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 2%;
+}
+footer .finpage .iconf {
+  display: flex;
+}
+footer .finpage .iconf .fas {
+  margin: 5%;
+}
+footer .finpage .legal {
+  margin-left: 5%;
+}
+footer .finpage .legal .textp, footer .finpage .legal p {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  body main .fonctionnement .btnfonct .one, body main .fonctionnement .btnfonct .two, body main .fonctionnement .btnfonct .three {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 1%;
+    margin-bottom: 7%;
+    border: solid 2px #F2F2F2;
+    border-radius: 49px;
+    font-weight: bold;
+    width: 39%;
+    height: 25%;
+    justify-content: space-around;
+  }
+  body main .fonctionnement .btnfonct .one .number, body main .fonctionnement .btnfonct .two .number, body main .fonctionnement .btnfonct .three .number {
+    margin: -3.5% 0 0 1%;
+    padding: 0.5%;
+    width: 3%;
+    border-radius: 7rem;
+    margin: -4% 0 13% 2%;
+  }
+  body main #restaurants .row1 {
+    display: flex;
+  }
+  body main #restaurants .row1 .card a .badge {
+    right: 0;
+    margin-left: 15px;
+    margin-right: 62%;
+  }
+  body main #restaurants .row2 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .city input {
+    padding-left: 2%;
+    font-size: 20px;
+    padding-top: 1%;
+  }
+  main .reserv .explore {
+    width: 27%;
+  }
+  main .fonctionnement h1 {
+    margin-left: 2%;
+  }
+  main .fonctionnement .btnfonct {
+    display: flex;
+  }
+  main .fonctionnement .btnfonct .one, main .fonctionnement .btnfonct .two, main .fonctionnement .btnfonct .three {
+    margin-left: 2%;
+  }
+  main .fonctionnement .btnfonct .one .number, main .fonctionnement .btnfonct .two .number, main .fonctionnement .btnfonct .three .number {
+    margin: -2% 0 0 1%;
+    width: 3%;
+  }
+  main #restaurants .row1 {
+    display: flex;
+  }
+  main #restaurants .row1 .card a .badge {
+    right: 0;
+  }
+  main #restaurants .row1 .card .textimg .content {
+    font-size: 19px;
+    margin-top: 2%;
+  }
+  main #restaurants .row2 {
+    display: flex;
+  }
+  main #restaurants .row2 .card {
+    height: 460px;
+  }
+  main #restaurants .row2 .textimg .content {
+    font-size: 19px;
+    margin-top: 2%;
+  }
+}/*# sourceMappingURL=style.css.map */

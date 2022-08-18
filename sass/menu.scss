@@ -1,0 +1,709 @@
+@keyframes progress-menu
+{
+    0%{ transform: translateY (200px);
+            opacity: 0;
+        }
+    
+    100%{transform: translateY(50px);
+            opacity: 1;}
+
+}
+
+@keyframes rotate {
+
+  from { transform: rotate(0deg);}
+
+  to {transform: rotate(-360deg);}
+    
+}
+
+@keyframes retarde {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(50px);
+    }
+    
+}
+
+
+html
+{   
+     font-family: 'Roboto', "sans-serif";
+
+    h2
+    {
+             
+        font-family: "Shrikhand","sans-serif";
+    }
+}
+
+body
+{
+     margin: 0 0 0 0;
+
+    header
+    {
+        font-family:"shrikhand", "sans-serif";
+        text-align: center;
+        font-size: 112%;
+        font-weight: bolder;
+        font-style: italic;
+        position: relative;
+        box-shadow: 0 0 0.5rem rgb(213, 211, 211);
+        padding: 0.3rem;
+        
+
+        & .logo
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 21%;
+
+            & a 
+            {
+
+                text-decoration: none;
+                color: black;
+
+                & i 
+                {
+                    margin-top: 42px;
+                    margin-bottom: 29px;
+                    display: grid;
+                    place-items: center;
+                    margin-right: 19%;
+
+                }
+       
+            }
+    
+
+        }
+
+
+    }
+
+
+    main
+    {
+        .img
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+            
+        }
+
+        .contenu
+        {   
+        
+            border-radius: 40px 40px 0 0;
+            z-index: 1;
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            background-color: rgb(254, 254, 254);
+
+            & .coeur
+
+            {
+                margin-left: 5%;
+        
+                & .Note
+                {
+                    display: flex;
+                    justify-content: space-between;
+
+                    
+                    & .cardh
+                    {
+                        cursor: pointer;
+                        width: 17px;
+                        height: 21px;
+                        margin-top: 7%;
+                        margin-right: 13%;
+                
+                        & i
+                        {
+                            position: absolute;
+                            font-size: 25px;
+                        }
+
+                    
+                        & .active
+                        {   
+                            -webkit-background-clip: text;
+                            background-color: #9356DC;
+                            color: transparent;
+                            opacity: 0;
+                            background-image: linear-gradient(#FF79DA, #9356DC);
+                            background-clip: text;                          
+                            
+                           
+                        }
+
+                        &:hover .iconh
+                        {
+                            opacity: 0;
+                        }
+
+
+                        &:hover .active
+                        {
+                            opacity: 1;
+                        }
+
+                    }
+                }
+
+
+                & .titr
+                {
+                    font-size: 200%;
+                    font-weight: bolder;
+                    font-style: italic;
+                    font-family:"shrikhand","sans-serif";
+                    margin-left: 2%;
+                    
+                }
+    
+
+            }
+                    
+
+                    & .soust
+                    {
+                        font-size: 110%;
+                        border-bottom: 4px solid #99E2D0;
+                        width: 40px;
+                        margin-left: 2%;
+                    }
+
+                    & .entre
+                    {
+                        margin-left: 1%;
+                    }
+            
+
+            .cardsresto
+            {
+                margin-left: 4%;
+                margin-right: 5%;
+
+            
+            
+
+                & .card,.cardn
+                {
+                    margin-bottom: 5%;
+
+                    animation: retarde 3s ease-in-out;
+                    
+
+
+            
+                    & a
+                    {   
+                        color: black;
+                        text-decoration: none;
+
+
+                        & .textm
+                        {
+                            display: flex;
+                            width: 100%;
+                            box-shadow: 0px 0px 13px 2px #80808069;
+                            border-radius: 21px;
+                            height: 100%;
+                            overflow: hidden;
+
+                            
+
+                            & .titre
+
+                            {
+                                font-size: 15px;
+                                width: 80%;
+                                margin-left: 2%;
+
+                                & h2
+                                {
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+
+                            
+                                }
+
+                                & p 
+                                {
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+
+                                
+
+
+                            }
+                       
+
+                            & .prix
+                            {
+                                display: flex;
+                                width: 20%;
+                                justify-content: space-between;
+
+                                & .price
+                                {
+                                
+                                    margin-top: 34px;
+                                    margin-left: 5%;
+
+                                
+                                }
+                            
+
+                                & .check
+                                {
+                                    background-color: #99E2D0;
+                                    border-radius: 0 14px 14px 0;
+                                    height: 100px;
+                                    width: 48px;
+                                    margin-right: -53px;
+                                    display: grid;
+                                    place-items: center;
+                                    transition: all 1s ease-in-out;
+
+                                
+                                    & .checkm
+                                    {
+                                        color: #99E2D0;
+                                        margin-right: 1%;
+                                        margin-top: 5%;
+                                        justify-content: center;
+                                        background-color: white;
+                                        border-radius: 15px;
+                                        padding: 3px;
+                                       
+
+                                      
+                                    }
+                                 
+                        
+                                }
+
+
+    
+
+                            }
+
+                            &:hover .check 
+                            {
+                               margin-right: 0;
+                            
+                            }
+
+                            &:hover .checkm
+                            {
+                                animation: rotate 3s;
+                            }
+
+                            &:hover h2
+                            {
+                                    width: 200px;
+                            }
+
+                            
+
+            
+                        } 
+
+                    }
+
+              
+                }
+                
+
+
+
+                .bouton
+                {   
+                    display: flex;
+                    justify-content: center;
+
+                    .commande
+                    {
+                        background: -webkit-linear-gradient(180deg, #ff79da, #9356dc);
+                        border-radius: 10px;
+                        font-size: 25px;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                        margin-bottom: 5%;
+                        padding: 1%;
+                        width: 50%;
+                        
+
+                    }
+
+
+                }
+        }
+
+}
+
+
+}
+
+footer
+{
+    background-color: rgb(81, 80, 80);
+    color: white;
+    width: 100%;
+    padding-top: 5%;
+    top: 194%;  
+
+        h1 
+        {
+            font-family:"shrikhand",cursive;
+            font-size: 30px;
+            margin: 0 0 0 5%;
+        }
+
+        .finpage
+        {
+            
+            justify-content: space-between;
+            width: 70%;
+            margin-left: 2%;
+            
+            & .iconf
+            {
+                display: flex;
+
+                & .fas
+                {
+                    margin-left: 6%;
+                    margin-top: 1%;
+                    margin-right: 3%;
+                    
+                }
+
+                p 
+                {
+                    margin: 0;
+                }
+
+            }
+
+            & .legal
+            {
+                margin-left: 5%;
+                padding-bottom: 8%;
+
+                & a 
+                {
+                        text-decoration: none;
+                
+
+                    & .textp, p
+                    {
+                        margin-bottom: 0;
+                        margin-top: 8px;
+                        color: white;
+                    }
+                
+
+                }
+
+             
+            }
+
+        }
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px)
+{
+
+body 
+{
+
+main 
+{
+    .img
+    {
+        height: 396px;
+    }
+
+    .contenu
+    {
+
+        
+        & .coeur
+        {
+
+            & .Note
+        
+            { 
+                
+                & .cardh
+                {
+                    cursor: pointer;
+                    width: 17px;
+                    height: 21px;
+                    margin-top: 5%;
+                    margin-right: 13%;
+            
+                    & i
+                    {
+                        position: absolute;
+                        font-size: 25px;
+                    }
+
+                
+                    & .active
+                    {   
+                        background-color: #9356DC;
+                        color: transparent;
+                        opacity: 0;
+                        background-image: linear-gradient(#FF79DA, #9356DC);
+                        background-clip: text;
+                    
+                    }
+
+                    &:active .iconh
+                    {
+                        opacity: 0;
+                    }
+
+
+                    &:active .active
+                    {
+                        opacity: 1;
+                    }
+
+                }
+            }
+
+        
+    
+
+        }
+
+  
+
+        .cardsresto
+        {
+            
+                    
+            
+            & .card, .cardn
+            {
+                & a
+                {   
+
+                    & .prix
+                    {
+                        & .price
+                        {
+                            margin-top: 33px;
+                            margin-left: 375px; 
+                            font-size: 27px;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        .bouton
+        {
+            border-radius: 35px;
+            font-size: 30px;
+            
+        }
+
+    
+    }
+ 
+}
+}
+
+}
+
+
+
+@media screen and (min-width:992px) 
+{
+
+main 
+{
+
+    .img
+    {
+        height: 251px;
+    }
+    
+    .contenu
+    {
+        & .coeur 
+        {
+
+            
+    
+            .Note
+            {
+                font-size: 30px;
+            
+
+                &.titr
+                {
+                    
+                        font-size: 40px;
+                        margin-left: 1%;
+                }
+
+             
+            
+            }
+         }
+
+        .cardsresto
+        {
+
+            & .categorie1, .categorie2, .categorie3
+            {
+                display: flex;
+
+                & .card
+                {
+                    margin-bottom: 5%;
+                    width: 109%;
+                    margin-left: 2%;
+
+                    & a 
+                    {
+                        & .textm
+                        {
+                            &.titre
+                            {
+                                & h2 
+                                {
+                                    
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .cardn
+            {
+                    margin-bottom: 5%;
+                    width: 32%;
+                    margin-left: 2%;
+
+            }
+
+            .bouton
+            {
+                &.commande
+                {
+                   
+                }
+            }
+
+            
+
+
+        }
+
+    
+
+    }
+
+
+
+
+footer
+{
+    background-color: rgb(81, 80, 80);
+    color: white;
+    width: 100%;
+    padding-top: 5%;
+
+        h1 
+        {
+            font-family:"shrikhand",cursive;
+            font-size: 30px;
+            margin: 0 0 0 5%;
+        }
+
+        .finpage
+        {
+            
+            justify-content: space-between;
+            width: 50%;
+            margin-left: 4%;
+            display: flex;
+            
+            & .iconf
+            {
+                display: flex;
+
+                & .fas
+                {
+                    margin-left: 6%;
+                    margin-top: 1%;
+                    margin-right: 3%;
+                    
+                }
+
+                p 
+                {
+                    margin: 0;
+                    width: 208px;
+
+                }
+
+            }
+
+            & .legal
+            {
+                margin-left: 5%;
+                padding-bottom: 8%;
+                display: flex;
+
+                & .textp, p
+                {
+                    margin-bottom: 0;
+                    margin-top: 2px;
+                    margin-left: -5%;
+                    width: 204px;
+                    color: white;
+                    text-decoration: none;
+                  
+                }
+
+             
+            }
+
+        }
+
+}
+
+}
+
+
+}
+}
